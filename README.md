@@ -1,27 +1,27 @@
-# Scalipus — Clube de Setúbal
+# Scalipus — inscrições no jogo escolhido
 
-## Novidades
+## Jogos e Jogadores
 
-- Logótipo do clube aplicado ao site e aos ícones.
-- Visão geral com relatório de participação por jogador: presenças confirmadas / total de jogos passados × 100. Confirmações de jogos futuros não contam e não é inventada uma percentagem quando não há jogos passados.
-- Fusão de jogadores reservada ao Master por defeito. O Master pode autorizar e revogar a operação individualmente para cada administrador, em Perfil → Permissões do grupo → Permitir fusão. Um administrador não pode atribuir essa permissão.
+Abre um jogo na tab Jogos para ver as inscrições dessa data, inscrever-te ou cancelar a presença. Master e administradores também podem responder pelos restantes jogadores.
 
-![Relatório e logótipo](preview.png)
+A lista do jogo e a grelha de Jogadores usam o mesmo registo jogador/jogo: uma alteração num ecrã aparece automaticamente no outro, sem afetar outras datas. Os utilizadores não se inscrevem em jogos passados.
 
-## Níveis de acesso
+![Inscrições de um jogo](game-preview.png)
 
-| Nível | Operações |
-| --- | --- |
-| Master | Todas as operações e gestão de permissões. |
-| Administrador | Jogos, jogadores, presenças, parcelas e anulações; fusões só com autorização explícita do Master. |
-| Utilizador | Adicionar o próprio nome e marcar a própria presença. Não acede a valores pagos. |
+## Valores pagos
 
-As parcelas, datas, observações, autoria e anulações são mantidas no histórico. A fusão reúne as presenças sem duplicar a mesma data, conserva as parcelas e arquiva a ficha absorvida.
+A coluna Valor pago é apenas texto de consulta. O acumulado resulta das parcelas válidas, registadas ou anuladas exclusivamente na tab Valores pagos. A alteração de um movimento atualiza o acumulado na grelha. Os dados financeiros continuam exclusivos de Master e administradores.
 
 ![Histórico de pagamentos](payments-preview.png)
 
+## Restantes funcionalidades
+
+O relatório de participação exclui jogos futuros. A fusão está reservada ao Master, que pode autorizar administradores individualmente. O logótipo Scalipus está incluído no ficheiro autónomo.
+
+![Visão geral](preview.png)
+
 ## Descarregar
 
-Abre Scalitpus-demo.zip e escolhe Download raw file. Extrai o ZIP e abre scalitpus-demo.html. O seletor Testar nível permite explorar os três perfis nesta demonstração. Dados fictícios e locais, sem sincronização entre dispositivos. A versão real requer Supabase e alojamento.
+Abre Scalitpus-demo.zip e escolhe Download raw file. Extrai o ZIP e abre scalitpus-demo.html. Esta é uma demonstração com dados fictícios e locais, sem sincronização entre dispositivos. A versão real requer alojamento e Supabase.
 
-Validado com compilação, 11 testes de domínio, 12 testes de navegador e verificações SQL de privacidade financeira, delegação e revogação de fusão, migração e integridade do histórico.
+Validação: compilação, 11 testes de domínio e 15 testes de navegador, incluindo inscrições entre dois jogos futuros, sincronização nos dois sentidos, inscrições por administradores, restrições de jogos passados e totais apenas de consulta.

@@ -1,11 +1,18 @@
-# Scalitpus — demonstração
+# Scalitpus — mapa de participações
 
-Esta branch contém apenas a demonstração autónoma, com dados fictícios.
+A demonstração foi atualizada para o formato de grelha:
+
+- Uma linha por jogador.
+- **Valor pago:** total acumulado do jogador, editável pelo administrador.
+- Uma coluna por data: **X** = presença, **—** = não vai, vazio = sem resposta.
+- Os pagamentos são independentes dos jogos e das presenças; externos estão isentos.
+
+![Exemplo da grelha](preview.png)
 
 ## Descarregar
 
-1. Abre `Scalitpus-demo.zip` no GitHub e escolhe **Download raw file** (Descarregar ficheiro).
-2. Extrai o ZIP.
-3. Abre `scalitpus-demo.html` no Chrome, Safari ou Firefox.
+Abre `Scalitpus-demo.zip` e escolhe **Download raw file** (Descarregar ficheiro). Extrai o ZIP e abre `scalitpus-demo.html` no navegador.
 
-Não requer instalação nem Internet. As alterações não são partilhadas entre dispositivos. O site real ainda precisa de base de dados e alojamento configurados.
+Esta é uma demonstração com dados fictícios e sem sincronização entre dispositivos. Se abriste uma versão anterior com dados no navegador, podes manter as presenças e introduzir os totais reais, ou usar «Repor dados de demonstração» no menu do perfil.
+
+A versão foi validada com a compilação de produção, 5 testes de domínio, 9 testes de navegador e verificações SQL de permissões e independência dos valores acumulados.
